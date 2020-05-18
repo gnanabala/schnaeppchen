@@ -7,4 +7,16 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  this.route('schnaeppchen', function() {
+    this.route('biete', function() {
+      this.route('SH');
+      this.route('SS');
+      this.route('SK');
+    });
+    this.route('suche', function() {
+      this.route('SH');
+    });
+  });
+  this.route('daten');
+  this.route('anzeige');
 });

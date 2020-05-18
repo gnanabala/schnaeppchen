@@ -1,0 +1,12 @@
+<br><br>
+
+<fieldset> 
+<legend>Suche Categories</legend>
+{{#each model as |category|}}
+<br>
+<button {{action "SH"}}>{{category.id}} - {{category.name}} </button><br>
+{{/each}}
+
+</fieldset>
+
+{{outlet}}

@@ -1,0 +1,17 @@
+<br><br><br>
+<h1>Anzeigen</h1>
+{{#each model as |anzeige|}}
+<div>
+<h4><b>{{anzeige.subcategories}}</b></h4>  
+{{anzeige.inhalt}},{{anzeige.telephone}}
+
+</div>
+<br>
+
+{{/each}}
+
+<br>
+<button {{action "add"}}>Add Neue Anzeige</button>
+
+
+{{outlet}}

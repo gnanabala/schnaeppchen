@@ -1,0 +1,34 @@
+
+<h1>Schnäppchen</h1>
+
+
+<br><br>
+
+<label for="region">Region</label>
+<span></span>
+<select id="region">
+    {{#each model as |reg|}}
+<br>
+
+<option value={{reg.region}}>{{reg.region}}-{{reg.amount}}</option>
+
+<br>
+{{/each}}
+
+</select>
+<br><br>
+<button {{action "biete"}}> Biete</button>
+<button {{action "suche"}}> Suche</button>
+
+
+
+
+{{!--
+<br>
+<input type="radio" id="biete" name="gender" value="biete" onclick="alert('biete')">
+<label for="biete">Biete</label><br>
+<input type="radio" id="suche" name="gender" value="suche" onclick="alert('suche')">
+<label for="suche">Suche</label><br>
+
+--}}
+{{outlet}}

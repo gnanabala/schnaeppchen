@@ -1,0 +1,21 @@
+
+<br><br>
+
+<label for="bcategories">Biete Categories</label>
+<span></span>
+<select id="bcategories">
+    <optgroup label="Categories">
+    {{#each model as |category|}}
+<br>
+
+<option value={{category.id}} {{action "subcategory" category.id}}>{{category.name}}</option>
+
+<br>
+{{/each}}
+</optgroup>
+</select>
+
+
+
+    
+    {{outlet}}
