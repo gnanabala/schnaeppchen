@@ -11,11 +11,6 @@ export default class SchnaeppchenBieteSKRoute extends Route {
             { id: 'VS', name: 'Verscheidnes' }
         ]
     }
-    @action
-    subcategory(categoryID) {
-        let route = 'schnaeppchen.biete.' + categoryID;
-        this.transitionTo(route);
-    }
 
 
     @action

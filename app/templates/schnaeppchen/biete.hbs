@@ -3,16 +3,17 @@
 
 <label for="bcategories">Biete Categories</label>
 <span></span>
-<select id="bcategories">
-    <optgroup label="Categories">
+<select id="bcategories" {{action "subcategory"}}>
+    <option default>Categories</option>
+   
     {{#each model as |category|}}
 <br>
 
-<option value={{category.id}} {{action "subcategory" category.id}}>{{category.name}}</option>
+<option value={{category.id}}>{{category.name}}</option>
 
 <br>
 {{/each}}
-</optgroup>
+
 </select>
 
 

@@ -19,4 +19,5 @@ Router.map(function() {
   });
   this.route('daten');
   this.route('anzeige');
+  this.route('demo');
 });

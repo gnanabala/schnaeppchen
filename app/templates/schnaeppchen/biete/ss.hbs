@@ -2,16 +2,17 @@
 
 <label for="subcategories">Subcategories</label>
 <span></span>
-<select id="subcategories">
+<select id="subcategories" >
+      <option default>Subcategories</option>
 
     {{#each model as |subcategory|}}
 <br>
 
-<option value={{subcategory.id}} {{action "auswahl" }}>{{subcategory.name}}</option>
+<option value={{subcategory.id}} >{{subcategory.name}}</option>
 
 <br>
 {{/each}}
 
 </select>
-
+<button {{action "auswahl" }}>Submit</button>
  {{outlet}}

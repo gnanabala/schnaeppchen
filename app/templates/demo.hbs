@@ -1,0 +1,35 @@
+<h3>demo route</h3>
+
+<form action="" style="text-align: center" method="POST">
+
+ First name: 
+<input type="text"  id="firstName"><br><br>
+Last name:
+<input type="text"  id="lastName"><br><br>
+Grade:
+<input type="text"  id="grade"><br><br>
+<button id="enterInfo" value="Enter" {{action "submit"}}>Enter</button>
+
+<button {{action "show"}}>Show</button>
+<table class="table">
+    <thead>
+        <tr>
+            <td><strong>First Name</strong></td>
+            <td><strong>Last Name</strong></td>
+            <td><strong>Grade</strong></td>
+        
+        </tr>
+    </thead>
+    <tbody id="runnerInfo">
+        <tr>
+            <td>Ben</td>
+            <td>Anna</td>
+            <td>12</td>
+        </tr>
+    </tbody>
+</table>
+
+
+</form>
+
+{{outlet}}
